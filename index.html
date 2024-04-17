@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Challenge Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_seccion">
+            <img class="logo" src="assets/Logo.png" alt="logo alura">
+            <h1>Encriptador / Desencriptador</h1>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="panel_izquierdo">
+            <main>
+                <div class="input-container">
+                    <label id="text-input-label" for="text-input">Texto:</label>
+                    <textarea id="text-input" placeholder="Ingrese el texto aquí"></textarea>                    </div>
+                <p class="info">
+                    <img class="iconoAlerta" src="assets/bi_exclamation-circle-fill.png" alt="signoexclamación">
+                    <p class="condición">Solo letras minúsculas y sin acentos</p>
+                </p>
+                <button onclick="fnc_Encrip_text()" class="cl_Botones">Encriptar</button>
+                <button onclick="fnc_Desenc_text()" class="cl_Botones" id="desencriptar" disabled>Desencriptar</button>
+            </main>
+        </div>
+
+        <div class="panel_derecho">
+            <div class="result-container">
+                <label id="lab-result" for="result" style="display:block;">Resultado:</label>
+                <textarea id="txt-result" readonly style="display:block;"></textarea>
+                <img id="img-no-result" src="assets/Muñeco.png" alt="imagen de sin resultados">
+                <h2 id="txt1-no-result">Ningún mensaje fue encontrado</h2>
+                <h4 id="txt2-no-result">Ingresa el texto que desees encriptar o desencriptar.</h4>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer__rodape">
+            <p>Johnn G. Gutiérrez</p>
+            <p>2024</p>
+        </div>
+    </footer>
+</body>
+
+</html>

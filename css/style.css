@@ -1,0 +1,129 @@
+body {
+    background: #F3F5FC; 
+    min-height: 100vh;
+}
+/*
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+*/
+ 
+header {
+    padding: 10px;
+    text-align: center;
+}
+
+.header_seccion {
+    display: flex;
+    flex-flow: column;
+    left: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: absolute; 
+    left: 20px;
+    top: 20px;
+    height: 48px;
+    width: 120px;
+}
+
+.panel_derecho,
+.panel_izquierdo {
+    width: 100%;
+    height: 90%;
+    margin-left: auto;
+}
+
+/* Estilos para el lado izquierdo */
+.panel_izquierdo {
+    width: calc(100% - 100px); /* Restamos el ancho del right-half */
+    padding-right: 5px; /* Margen separado del right-half */
+}
+
+.panel_derecho {
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 25px;
+    position: absolute; 
+    right: 20px;
+    top: 20px;
+    padding: 20px 20px;
+    width: 400px; /* Ancho del right-half */
+    height: 90%;
+    margin-left: auto; /* Empujar al lado derecho */
+    margin-right: 5px; /* Margen separado del contenedor principal */
+}
+
+.result-container{
+    display: flex;
+    flex-flow: column;
+    color: black;
+    gap: 10px;
+    padding: 5px;
+}
+result-container h2{
+    width: 336px;
+    height: 58px;
+    font-size: 24;
+    text-align: center wrap
+  }
+
+.cl_Usuario{
+    display: flex;
+    flex-flow: column;
+    width:calc(100% - 550px);
+    justify-content: center;
+    padding-right: 5px;
+}
+
+oTexto {
+    color:#0A3871 ;
+}
+.info{
+    display: flex;
+    flex-flow: row;
+    justify-content:space-around;
+    align-items: center;
+
+}
+
+.cl_Botones {
+    border-radius: 10px;
+    background: #0A3871;
+    padding: 10px 5px;
+    width: 25%;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+    color: white;
+    margin-left: 10px; /* Ajusta el espacio a la izquierda del botón */
+    margin-right: 0; /* Elimina el espacio a la derecha del botón */
+    transition: background-color 0.3s ease; /* Agregar transición */
+}
+
+.cl_Botones:hover {
+    background-color: #d49e7f; /* Cambiar color al pasar el cursor */
+}
+
+.cl_Botones:disabled {
+    background: #898989;
+}
+
+
+
+footer {
+    text-align: center;
+    font-family: sans-serif;
+    width: 100%;
+    bottom: 0;
+    position:fixed;
+
+}
+
