@@ -1,17 +1,9 @@
 body {
     background: #F3F5FC; 
-    min-height: 100vh;
-}
-/*
-body {
+    width: 80%;
+    height: 80%;
     font-family: Arial, sans-serif;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
- }
-*/
+}
  
 header {
     padding: 10px;
@@ -45,6 +37,15 @@ header {
 .panel_izquierdo {
     width: calc(100% - 100px); /* Restamos el ancho del right-half */
     padding-right: 5px; /* Margen separado del right-half */
+ }
+
+#input_txt {
+    margin-top: 40px;
+    border-style: none;
+    width:calc(100% - 550px);
+    color: #0A3871;
+    border-radius: 5px;
+    font-size: 32;
 }
 
 .panel_derecho {
@@ -75,26 +76,25 @@ result-container h2{
     text-align: center wrap
   }
 
-.cl_Usuario{
+.panel_botonera{
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     width:calc(100% - 550px);
     justify-content: center;
     padding-right: 5px;
+    height: 60px;
+
 }
 
-oTexto {
-    color:#0A3871 ;
-}
-.info{
+.panel_info{
     display: flex;
-    flex-flow: row;
-    justify-content:space-around;
+    gap: 20px;
+    height: 60px;
     align-items: center;
-
+    margin-left: 18%; /* Ajusta el espacio a la izquierda del botón */
 }
 
-.cl_Botones {
+.oBotones {
     border-radius: 10px;
     background: #0A3871;
     padding: 10px 5px;
@@ -103,27 +103,32 @@ oTexto {
     font-weight: 400;
     border: none;
     color: white;
-    margin-left: 10px; /* Ajusta el espacio a la izquierda del botón */
     margin-right: 0; /* Elimina el espacio a la derecha del botón */
     transition: background-color 0.3s ease; /* Agregar transición */
 }
 
-.cl_Botones:hover {
+.oBotones:hover {
     background-color: #d49e7f; /* Cambiar color al pasar el cursor */
 }
 
-.cl_Botones:disabled {
+.oBotones:disabled {
     background: #898989;
 }
 
-
-
-footer {
+/*seccion del pie de pagina*/
+.seccion_abajo {
     text-align: center;
     font-family: sans-serif;
     width: 100%;
     bottom: 0;
     position:fixed;
-
+}
+/*seccion del autor*/
+.footer__rodape{
+    display: flex;
+    flex-flow: row;    
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
